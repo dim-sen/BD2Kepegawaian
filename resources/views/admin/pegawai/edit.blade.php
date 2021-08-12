@@ -1,5 +1,5 @@
 @extends('template.home')
-@section('sub-judul', 'Edit Anggota')
+@section('sub-judul', 'Edit Pegawai')
 @section('content')
 
     @if(count($errors) > 0)

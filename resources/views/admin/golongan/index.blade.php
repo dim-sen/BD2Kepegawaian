@@ -36,10 +36,10 @@
             <tr>
                 <td>{{ $result + $golongans -> firstitem() }}</td>
                 <td>{{ $hasil ->  id_golongan }}</td>
-                <td>{{ $hasil ->  gaji_pokok }}</td>
-                <td>{{ $hasil ->  tunjangan_pasangan }}</td>
-                <td>{{ $hasil ->  tunjangan_anak }}</td>
-                <td>{{ $hasil ->  tunjangan_transport }}</td>
+                <td>Rp{{ $hasil ->  gaji_pokok }}</td>
+                <td>Rp{{ $hasil ->  tunjangan_pasangan }}</td>
+                <td>Rp{{ $hasil ->  tunjangan_anak }}</td>
+                <td>Rp{{ $hasil ->  tunjangan_transport }}</td>
                 <td>
                     <form action="{{ route('golongan.destroy', $hasil -> id) }}" method="POST">
                         @csrf

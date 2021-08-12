@@ -36,9 +36,9 @@
                 <td>{{ $result + $gajis -> firstitem() }}</td>
                 <td>{{ $hasil -> pegawais -> nip }}</td>
                 <td>{{ $hasil -> tanggal_gaji }}</td>
-                <td>{{ $hasil -> jumlah_gaji }}</td>
-                <td>{{ $hasil -> potongan }}</td>
-                <td>{{ $hasil -> total_gaji }}</td>
+                <td>Rp{{ $hasil -> jumlah_gaji }}</td>
+                <td>Rp{{ $hasil -> potongan }}</td>
+                <td>Rp{{ $hasil -> total_gaji }}</td>
                 <td>
                     <form action="{{ route('gaji.destroy', $hasil -> id) }}" method="POST">
                         @csrf

@@ -1,5 +1,5 @@
 @extends('template.home')
-@section('sub-judul', 'Tambah Peminjaman')
+@section('sub-judul', 'Tambah Gaji')
 @section('content')
     @if(count($errors) > 0)
         @foreach($errors -> all() as $error)
